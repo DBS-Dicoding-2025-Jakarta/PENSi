@@ -1,26 +1,25 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import Navbar from '../components/Navbar'
-
-const inter = Inter({ subsets: ['latin'] })
+import "./globals.css";
+import { Metadata } from "next";
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Subcribtion";
 
 export const metadata: Metadata = {
-  title: 'PENSi - Perencanaan Pensiun Cerdas',
-  description: 'Platform prediksi dana pensiun berbasis data',
-}
+  title: "PENSi",
+  description: "Kalkulator Pensiun Online",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="id">
-      <body className={inter.className}>
+      <body>
         <Navbar />
-          {children}
+        {children}
+        <Footer /> {/* Hapus ini kalau Footer hanya di Home */}
       </body>
     </html>
-  )
+  );
 }

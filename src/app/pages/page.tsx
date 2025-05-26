@@ -1,6 +1,6 @@
 // src/app/tentang/page.tsx
-import AboutPage from '@/components/AboutTeam';
+import AboutPage from "@/app/components/AboutTeam";
 
 export default function TentangPage() {
-    return <AboutPage />;
+  return <AboutPage />;
 }
