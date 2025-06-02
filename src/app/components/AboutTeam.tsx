@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import { ArrowRight } from 'lucide-react';
 
 interface TeamMemberProps {
     name: string;
@@ -31,7 +30,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({ name, position, imageUrl }) => 
     );
 };
 
-const AboutPage = () => {
+const AboutTeam = () => {
     const teamMembers = [
         {
             name: "Robby Jhony",
@@ -66,7 +65,7 @@ const AboutPage = () => {
     ];
 
     return (
-        <main className="min-h-screen">
+        <main id='tentang' className="min-h-screen">
             {/* Hero Section */}
             <section className="container mx-auto py-20 px-4 md:px-6">
                 <header className="flex flex-col md:flex-row gap-10 items-center">
@@ -77,16 +76,9 @@ const AboutPage = () => {
                         </h1>
                     </div>
                     <div className="w-full md:w-1/2">
-                        <p className="text-gray-600 mb-8">
+                        <p className="text-gray-600 mt-7">
                             PENSi (Personalized Estimator for a Nice & Secure Income) merupakan sebuah platform berbasis web yang dirancang untuk membantu individu di Indonesia dalam merencanakan dana pensiun secara personal dan akurat. Platform ini bertujuan untuk memberikan estimasi kebutuhan dana pensiun yang disesuaikan dengan kondisi finansial, gaya hidup, dan tujuan pensiun masing-masing pengguna.
                         </p>
-                        <button className="group bg-green-500 text-white font-medium rounded-md hover:bg-green-600 transition-colors py-3 px-8 duration-300 flex items-center">
-                            Coba Sekarang
-                            <ArrowRight
-                                size={20}
-                                className="ml-2 transform transition-transform duration-300 group-hover:translate-x-1"
-                            />
-                        </button>
                     </div>
                 </header>
             </section>
@@ -123,4 +115,4 @@ const AboutPage = () => {
     );
 };
 
-export default AboutPage;
+export default AboutTeam;

@@ -1,18 +1,19 @@
-import AboutPage from "@/app/components/AboutTeam";
-import LandingSection from "@/app/components/hero";
-import Blog from "@/app/components/informationCenter";
-import PensiStatistics from "@/app/components/statistik";
-import Footer from "@/app/components/Subcribtion";
-import Testimoni from "@/app/components/tesimoni";
+import AboutTeam from "./components/AboutTeam";
+import InformationCenter from "./components/informationCenter";
+import LandingSection from "./components/LandingSection";
+import Statistics from "./components/Statistics";
+import Subscription from "./components/Subscription";
+import Testimoni from "./components/tesimoni";
+
 export default function Home() {
   return (
-    <main>
-      <LandingSection />
-      <AboutPage />
-      <PensiStatistics />
-      <Testimoni />
-      <Blog />
-      <Footer />
+    <main className="max-w-screen-xxl mx-auto px-4 sm:px-6 lg:px-1">
+        <LandingSection/>
+        <AboutTeam/>
+        <Statistics/>
+        <Testimoni/>
+        <InformationCenter/>
+        <Subscription/>
     </main>
   );
 }

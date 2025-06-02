@@ -3,9 +3,9 @@ import { ArrowRight } from "lucide-react";
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Blog: React.FC = () => {
+const InformationCenter: React.FC = () => {
     return (
-        <section className="container mx-auto py-30 px-4 md:px-6">
+        <section id='blog' className="container mx-auto py-30 px-4 md:px-6">
             <header className="text-center mb-12">
                 <p className="text-green-500 font-medium mb-2">Blog</p>
                 <h1 className="text-5xl font-bold text-gray-900 max-w-4xl mx-auto">
@@ -15,7 +15,7 @@ const Blog: React.FC = () => {
 
             <main className="flex flex-col gap-8">
                 {/* Featured Card */}
-                <Link href="/blog/featured">
+                <Link href="/blog/PERENCANAAN">
                     <div className="flex flex-col md:flex-row bg-green-50 rounded-lg overflow-hidden cursor-pointer">
                         <div className="p-8 md:w-1/2">
                             <p className="text-green-600 uppercase font-medium text-sm mb-3">PERENCANAAN</p>
@@ -47,7 +47,7 @@ const Blog: React.FC = () => {
                 {/* Cards Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {/* Card 1 */}
-                    <Link href="/blog/target-dana-pensiun">
+                    <Link href="/blog/BESTPRACTICES">
                         <div className="bg-green-50 rounded-lg overflow-hidden flex flex-col h-full cursor-pointer">
                             <div className="p-6 flex-grow">
                                 <p className="text-green-600 uppercase font-medium text-sm mb-3">BEST PRACTICES</p>
@@ -68,7 +68,7 @@ const Blog: React.FC = () => {
                     </Link>
 
                     {/* Card 2 */}
-                    <Link href="/blog/tabungan-vs-investasi">
+                    <Link href="/blog/FONDASIKEUANGAN">
                         <div className="bg-green-50 rounded-lg overflow-hidden flex flex-col h-full cursor-pointer">
                             <div className="p-6 flex-grow">
                                 <p className="text-green-600 uppercase font-medium text-sm mb-3">FONDASI KEUANGAN</p>
@@ -89,7 +89,7 @@ const Blog: React.FC = () => {
                     </Link>
 
                     {/* Card 3 */}
-                    <Link href="/blog/pensiun-nyaman">
+                    <Link href="/blog/GAYAHIDUPPENSIUN">
                         <div className="bg-green-50 rounded-lg overflow-hidden flex flex-col h-full cursor-pointer">
                             <div className="p-6 flex-grow">
                                 <p className="text-green-600 uppercase font-medium text-sm mb-3">GAYA HIDUP PENSIUN</p>
@@ -114,4 +114,4 @@ const Blog: React.FC = () => {
     );
 };
 
-export default Blog;
+export default InformationCenter;
