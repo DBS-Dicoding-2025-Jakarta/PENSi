@@ -7,13 +7,13 @@ import Testimoni from "./components/tesimoni";
 
 export default function Home() {
   return (
-    <main className="max-w-screen-xxl mx-auto px-4 sm:px-6 lg:px-0">
-        <LandingSection/>
-        <AboutTeam/>
-        <Statistics/>
-        <Testimoni/>
-        <InformationCenter/>
-        <Subscription/>
+    <main className="max-w-screen-xxl mx-auto lg:px-0 pt-16 md:pt-20">
+      <LandingSection />
+      <AboutTeam />
+      <Statistics />
+      <Testimoni />
+      <InformationCenter />
+      <Subscription />
     </main>
   );
 }

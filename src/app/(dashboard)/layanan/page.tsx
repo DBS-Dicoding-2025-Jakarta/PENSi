@@ -20,6 +20,18 @@ const LayananPage: React.FC = () => {
   const [hasilPrediksi, setHasilPrediksi] = useState<number | null>(null);
   const [error, setError] = useState<string>("");
 
+  const formatRupiah = (value: string) => {
+    if (!value) return "";
+    let angka = value.replace(/\D/g, "");
+    angka = angka.replace(/^0+/, "");
+    if (angka === "") angka = "0";
+    return angka.replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  };
+
+  const unformatRupiah = (value: string) => {
+    return value.replace(/\./g, "");
+  };
+
   useEffect(() => {
     const loadModel = async () => {
       try {
@@ -28,7 +40,9 @@ const LayananPage: React.FC = () => {
         console.log("Model wrapper ready");
       } catch (err) {
         console.error("Model wrapper error:", err);
-        setError("Gagal memuat model ML. Coba refresh halaman atau hubungi support.");
+        setError(
+          "Gagal memuat model ML. Coba refresh halaman atau hubungi support."
+        );
       }
     };
 
@@ -38,14 +52,19 @@ const LayananPage: React.FC = () => {
   }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    const unformattedValue = unformatRupiah(value);
+    setFormData((prev) => ({ ...prev, [name]: unformattedValue }));
     setError("");
   };
 
   const validateInput = () => {
     const requiredFields = Object.keys(formData);
     for (const field of requiredFields) {
-      if (!formData[field as keyof typeof formData] || formData[field as keyof typeof formData] === "") {
+      if (
+        !formData[field as keyof typeof formData] ||
+        formData[field as keyof typeof formData] === ""
+      ) {
         return `Field ${field} harus diisi`;
       }
 
@@ -92,7 +111,6 @@ const LayananPage: React.FC = () => {
       console.log("Prediction result:", result);
 
       setHasilPrediksi(result);
-
     } catch (err) {
       console.error("Prediction error:", err);
       setError("Terjadi kesalahan saat melakukan prediksi. Silakan coba lagi.");
@@ -118,7 +136,9 @@ const LayananPage: React.FC = () => {
       )}
 
       <div className="relative z-10 max-w-3xl mx-auto px-4 py-20">
-        <h1 className="text-3xl font-bold text-center mb-4">Kalkulator Pensiun</h1>
+        <h1 className="text-3xl font-bold text-center mb-4">
+          Kalkulator Pensiun
+        </h1>
         <p className="text-center text-gray-600 mb-10 max-w-xl mx-auto">
           Hitung estimasi dana investasi yang kamu butuhkan untuk masa pensiun.
         </p>
@@ -146,16 +166,18 @@ const LayananPage: React.FC = () => {
             type="number"
             placeholder="Umur saat ini"
             className="w-full border border-gray-300 rounded-md px-4 py-2"
-            min="0" step="1"
+            min="0"
+            step="1"
           />
           <input
             name="monthlyIncome"
             onChange={handleChange}
-            value={formData.monthlyIncome}
-            type="number"
+            value={formatRupiah(formData.monthlyIncome)}
+            type="text"
             placeholder="Penghasilan bulanan (Rp)"
             className="w-full border border-gray-300 rounded-md px-4 py-2"
-            min="0" step="1000"
+            min="0"
+            step="1000"
           />
           <input
             name="monthlyDebt"
@@ -164,7 +186,8 @@ const LayananPage: React.FC = () => {
             type="number"
             placeholder="Pengeluaran cicilan bulanan (Rp)"
             className="w-full border border-gray-300 rounded-md px-4 py-2"
-            min="0" step="1000"
+            min="0"
+            step="1000"
           />
           <input
             name="savings"
@@ -173,7 +196,8 @@ const LayananPage: React.FC = () => {
             type="number"
             placeholder="Saldo tabungan saat ini (Rp)"
             className="w-full border border-gray-300 rounded-md px-4 py-2"
-            min="0" step="1000"
+            min="0"
+            step="1000"
           />
           <input
             name="netWorth"
@@ -191,7 +215,8 @@ const LayananPage: React.FC = () => {
             type="number"
             placeholder="Total aset (Rp)"
             className="w-full border border-gray-300 rounded-md px-4 py-2"
-            min="0" step="1000"
+            min="0"
+            step="1000"
           />
           <input
             name="totalLiabilities"
@@ -200,7 +225,8 @@ const LayananPage: React.FC = () => {
             type="number"
             placeholder="Total hutang (Rp)"
             className="w-full border border-gray-300 rounded-md px-4 py-2"
-            min="0" step="1000"
+            min="0"
+            step="1000"
           />
           <input
             name="retirementYears"
@@ -209,7 +235,8 @@ const LayananPage: React.FC = () => {
             type="number"
             placeholder="Tahun hidup setelah pensiun"
             className="w-full border border-gray-300 rounded-md px-4 py-2"
-            min="1" step="1"
+            min="1"
+            step="1"
           />
 
           <button
@@ -223,7 +250,9 @@ const LayananPage: React.FC = () => {
 
         {hasilPrediksi !== null && (
           <div className="mt-8 p-6 bg-green-50 border border-green-200 rounded-lg">
-            <h3 className="text-lg font-semibold text-green-800 mb-2">Hasil Prediksi:</h3>
+            <h3 className="text-lg font-semibold text-green-800 mb-2">
+              Hasil Prediksi:
+            </h3>
             <div className="text-2xl font-bold text-green-700">
               Estimasi dana pensiun yang dibutuhkan:
             </div>

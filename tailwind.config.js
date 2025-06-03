@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./src/app/**/*.{ts,tsx}", "./src/components/**/*.{ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["var(--font-urbanist)", "sans-serif"],
+      },
+      colors: {
+        primary: "#4CAF4F",
+      },
+    },
   },
   plugins: [],
 };
