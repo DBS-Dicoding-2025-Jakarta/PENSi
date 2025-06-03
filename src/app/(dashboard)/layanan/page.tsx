@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { modelWrapper } from "../../utils/modelWrapper"; // Adjust path as needed
+import Subscription from "@/app/components/Subscription";
 
 const LayananPage: React.FC = () => {
   const [showPopup, setShowPopup] = useState(true);
@@ -265,6 +266,7 @@ const LayananPage: React.FC = () => {
           </div>
         )}
       </div>
+      <Subscription />
     </section>
   );
 };
