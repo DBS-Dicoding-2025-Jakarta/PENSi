@@ -41,7 +41,7 @@ const Testimoni: React.FC = () => {
       image: "/people/download(2).jpeg",
     },
     {
-      id: 5,
+      id: 6,
       quote:
         "Sekarang saya bisa lebih tenang menghadapi masa pensiun karena punya gambaran yang jelas.",
       author: "Sari Dewi",
