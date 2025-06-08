@@ -57,10 +57,10 @@ const Subscription: React.FC = () => {
                     src="/vector/DBS.png"
                     alt="DBS Logo"
                     fill
-                    className="object-contain"
+                    className="object-contain "
                   />
                 </div>
-                <div className="relative w-8 h-8">
+                <div className="relative w-10 h-10">
                   <Image
                     src="/vector/circle-g.png"
                     alt="Secondary Logo"
@@ -79,7 +79,7 @@ const Subscription: React.FC = () => {
                   >
                     <div className="relative w-6 h-6">
                       <Image
-                        src="/people/download(2).jpeg"
+                        src="/vector/sosial1.png"
                         alt="Social"
                         fill
                         className="object-contain rounded-sm"
