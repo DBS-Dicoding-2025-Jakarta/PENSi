@@ -38,29 +38,34 @@ const TeamMember: React.FC<TeamMemberProps> = ({
 const AboutTeam = () => {
   const teamMembers = [
     {
-      name: "Robby Jhony",
-      position: "Front End Developer",
-      imageUrl: "/people/download(1).jpeg",
+      name: "Nicholas Anaya Putra",
+      position: "Machine Learning",
+      imageUrl:
+        "https://private-user-images.githubusercontent.com/210973479/453008106-463ef4dd-ea1a-4079-8913-c582d90efa39.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk0NzYxNzUsIm5iZiI6MTc0OTQ3NTg3NSwicGF0aCI6Ii8yMTA5NzM0NzkvNDUzMDA4MTA2LTQ2M2VmNGRkLWVhMWEtNDA3OS04OTEzLWM1ODJkOTBlZmEzOS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDYwOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA2MDlUMTMzMTE1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YWQ2MzliNjVmZWJkNWJkNTFkNzJjMGNlZWIyNjQxMTliNDE3ZDhkMDg1NjRlMTU5ODg1YjNiZmEzMmRiZGJlMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.r85hgYo5IMiYDMgvQTUcy7cm6Q15E7MpS80IvRh0OQ0",
     },
     {
-      name: "Robby Jhony",
-      position: "Front End Developer",
-      imageUrl: "/people/download(2).jpeg",
+      name: "Qaila Casandra",
+      position: "Machine Learning",
+      imageUrl:
+        "https://private-user-images.githubusercontent.com/210973479/453008088-b8ef9c63-a254-4f4d-8a8e-ec676f44afa0.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk0NzYxNzUsIm5iZiI6MTc0OTQ3NTg3NSwicGF0aCI6Ii8yMTA5NzM0NzkvNDUzMDA4MDg4LWI4ZWY5YzYzLWEyNTQtNGY0ZC04YThlLWVjNjc2ZjQ0YWZhMC5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDYwOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA2MDlUMTMzMTE1WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MTA0ZjQyMmQzNWFiZTg4ZWI0ZTNhOWZhMWQwZjVjYjNlZDg3ZWE3MWMwZDcyNDVlMDIyOTI3ZTg1NzBjNDQ1ZSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.0p6id-ePooYKqVzBtW-LZGFRugiweBve9o_wclGjWRk",
     },
     {
-      name: "Robby Jhony",
-      position: "Front End Developer",
-      imageUrl: "/people/download.jpeg",
+      name: "Tika Putri Marsanti",
+      position: "Machine Learning",
+      imageUrl:
+        "https://private-user-images.githubusercontent.com/210973479/453008066-9628f9bf-f2e4-49f5-bfe3-c459c8f51855.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk0NzY0NzIsIm5iZiI6MTc0OTQ3NjE3MiwicGF0aCI6Ii8yMTA5NzM0NzkvNDUzMDA4MDY2LTk2MjhmOWJmLWYyZTQtNDlmNS1iZmUzLWM0NTljOGY1MTg1NS5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDYwOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA2MDlUMTMzNjEyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MGJlYzQ4YzE2ZmY4YWY3M2NjZTExYWE2MTg5ZDY4OTA4NTk4ZTdmNmVjNzhiMzFlZTJkZWIyY2M3NTY5YTljMCZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.UFd2qDpNmrCpGaP9srfV_wjAf6dI2uYZF1BSYAdNtbI",
     },
     {
-      name: "Robby Jhony",
+      name: "Rinaldi Mulya Pratama",
       position: "Front End Developer",
-      imageUrl: "/people/images(1).jpeg",
+      imageUrl:
+        "https://private-user-images.githubusercontent.com/210973479/453008048-98741083-8483-41d6-9073-4f0b0e131d2d.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk0NzY0NzIsIm5iZiI6MTc0OTQ3NjE3MiwicGF0aCI6Ii8yMTA5NzM0NzkvNDUzMDA4MDQ4LTk4NzQxMDgzLTg0ODMtNDFkNi05MDczLTRmMGIwZTEzMWQyZC5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDYwOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA2MDlUMTMzNjEyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MzkwYWVhNjVmOGMzY2VjMmZkYmEyZmJiY2ExMmU1MjgzZWUyYTk1ZmQwMWNlMjllYzA4ODMwYTc5Nzc2YTg3NSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.tdpPFVZmonFDA4MoV92k1P0w3bRTK6UR-3OJ9jb3Ipw",
     },
     {
-      name: "Robby Jhony",
+      name: "Khairul Fahmi",
       position: "Front End Developer",
-      imageUrl: "/people/images(2).jpeg",
+      imageUrl:
+        "https://private-user-images.githubusercontent.com/210973479/453008683-d13bb812-f9eb-4b0a-abad-8a0430899938.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk0NzY0NzIsIm5iZiI6MTc0OTQ3NjE3MiwicGF0aCI6Ii8yMTA5NzM0NzkvNDUzMDA4NjgzLWQxM2JiODEyLWY5ZWItNGIwYS1hYmFkLThhMDQzMDg5OTkzOC5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDYwOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA2MDlUMTMzNjEyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MTA4YmQ3ZDY3MzVhZTE3ZjQ5MDZkYjY0ZmQ5OWQ1YWM4MzRlNDE2ZjBiMzg3YWE2MmVhZjMwMDZlNTYxNjFjMSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.q5S4j83GeyqhWHgMmOZa1xduC_X9aWb-Mfvv0xU5hto",
     },
     {
       name: "Robby Jhony",

@@ -4,9 +4,31 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
+const navLinks = [
+  { label: "Beranda", href: "/" },
+  { label: "Tentang", href: "/#tentang" },
+  { label: "Layanan", href: "/layanan" },
+  { label: "Blog", href: "/blog" },
+  { label: "Kontak", href: "/#kontak" },
+];
+
+const NavLinkList = ({ onClick }: { onClick?: () => void }) => (
+  <>
+    {navLinks.map(({ label, href }) => (
+      <li
+        key={label}
+        className="text-gray-800 hover:text-primary hover:font-semibold"
+      >
+        <Link href={href} onClick={onClick}>
+          {label}
+        </Link>
+      </li>
+    ))}
+  </>
+);
+
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
@@ -25,42 +47,14 @@ const Navbar: React.FC = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-4 md:space-x-6 text-sm md:text-base">
-          <li className="text-gray-800 hover:text-primary hover:font-semibold">
-            <Link href="/">Beranda</Link>
-          </li>
-          <li className="text-gray-800 hover:text-primary hover:font-semibold">
-            <Link href="#tentang">Tentang</Link>
-          </li>
-          <li className="text-gray-800 hover:text-primary hover:font-semibold">
-            <Link href="/layanan">Layanan</Link>
-          </li>
-          <li className="text-gray-800 hover:text-primary hover:font-semibold">
-            <Link href="/blog">Blog</Link>
-          </li>
-          <li className="text-gray-800 hover:text-primary hover:font-semibold">
-            <Link href="#kontak">Kontak</Link>
-          </li>
+          <NavLinkList />
         </ul>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
         <ul className="md:hidden absolute top-16 left-0 w-full bg-[#FAFAFA] flex flex-col space-y-4 py-4 px-6 shadow-md">
-          <li className="text-gray-800 hover:text-primary hover:font-semibold">
-            <Link href="/" onClick={() => setIsOpen(false)}>Beranda</Link>
-          </li>
-          <li className="text-gray-800 hover:text-primary hover:font-semibold">
-            <Link href="#tentang" onClick={() => setIsOpen(false)}>Tentang</Link>
-          </li>
-          <li className="text-gray-800 hover:text-primary hover:font-semibold">
-            <Link href="/layanan" onClick={() => setIsOpen(false)}>Layanan</Link>
-          </li>
-          <li className="text-gray-800 hover:text-primary hover:font-semibold">
-            <Link href="/blog" onClick={() => setIsOpen(false)}>Blog</Link>
-          </li>
-          <li className="text-gray-800 hover:text-primary hover:font-semibold">
-            <Link href="#kontak" onClick={() => setIsOpen(false)}>Kontak</Link>
-          </li>
+          <NavLinkList onClick={() => setIsOpen(false)} />
         </ul>
       )}
     </nav>

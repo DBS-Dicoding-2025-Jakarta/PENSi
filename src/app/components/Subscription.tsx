@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { FaInstagram, FaFacebookF, FaPhoneAlt } from "react-icons/fa";
 
 const Subscription: React.FC = () => {
   return (
@@ -52,7 +53,7 @@ const Subscription: React.FC = () => {
               <h2 className="text-3xl font-bold mb-4">PENSi</h2>
               <p className="text-sm">Registered and supervised by:</p>
               <div className="flex items-center mt-3 space-x-3">
-                <div className="relative w-28 h-10">
+                <div className="relative w-25 h-20">
                   <Image
                     src="/vector/DBS.png"
                     alt="DBS Logo"
@@ -70,23 +71,29 @@ const Subscription: React.FC = () => {
                 </div>
               </div>
 
-              <div className="flex space-x-4 mt-6">
-                {[...Array(3)].map((_, i) => (
-                  <a
-                    key={i}
-                    href="#"
-                    className="p-2 bg-white bg-opacity-20 rounded-md"
-                  >
-                    <div className="relative w-6 h-6">
-                      <Image
-                        src="/vector/sosial1.png"
-                        alt="Social"
-                        fill
-                        className="object-contain rounded-sm"
-                      />
-                    </div>
-                  </a>
-                ))}
+              <div className="flex space-x-4 mt-6 text-white text-xl">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-md hover:bg-white/20 transition"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-md hover:bg-white/20 transition"
+                >
+                  <FaFacebookF />
+                </a>
+                <a
+                  href="tel:+628123456789"
+                  className="p-2 rounded-md hover:bg-white/20 transition"
+                >
+                  <FaPhoneAlt />
+                </a>
               </div>
             </div>
 
