@@ -1,14 +1,13 @@
 @import "tailwindcss";
 
-
 .text-primary {
-  color: #4CAF4F;
+  color: #4caf4f;
 }
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #4CAF4F;
+  --primary: #4caf4f;
 }
 
 @theme inline {
@@ -35,3 +34,49 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Tambahkan ke globals.css */
+
+/* Styling untuk foto tim dengan positioning yang lebih baik */
+.team-photo {
+  object-fit: cover;
+  object-position: center top; /* Fokus ke bagian atas tengah untuk foto wajah */
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect untuk foto */
+.team-photo:hover {
+  transform: scale(1.05);
+}
+
+/* Container foto dengan aspect ratio yang konsisten */
+.photo-container {
+  position: relative;
+  width: 100%;
+  height: 16rem; /* 256px - sama dengan h-64 */
+  overflow: hidden;
+  border-radius: 0.5rem; /* rounded-lg */
+  background-color: #f3f4f6; /* gray-100 sebagai fallback */
+}
+
+/* Alternatif positioning berdasarkan kebutuhan */
+.photo-center {
+  object-position: center;
+}
+
+.photo-top {
+  object-position: center top;
+}
+
+.photo-face-focus {
+  object-position: center 20%; /* Fokus sedikit ke atas dari center untuk wajah */
+}
+
+/* Untuk foto yang lebih portrait */
+.photo-portrait {
+  object-position: center 15%;
+}
+
+/* Untuk foto yang lebih landscape */
+.photo-landscape {
+  object-position: center 40%;
+}

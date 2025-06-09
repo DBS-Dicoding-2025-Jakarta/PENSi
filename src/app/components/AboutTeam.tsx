@@ -15,7 +15,7 @@ const TeamMember: React.FC<TeamMemberProps> = ({
 }) => {
   return (
     <article
-      className="bg-amber-50/30 rounded-2xl shadow-xl p-2 transition transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg"
+      className="bg-amber-50/30 rounded-2x2 shadow-xl p-2 transition transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-lg"
       aria-label={`Profil ${name}`}
     >
       <figure className="w-full h-64 rounded-lg overflow-hidden">
@@ -68,9 +68,10 @@ const AboutTeam = () => {
         "https://private-user-images.githubusercontent.com/210973479/453008683-d13bb812-f9eb-4b0a-abad-8a0430899938.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk0NzY0NzIsIm5iZiI6MTc0OTQ3NjE3MiwicGF0aCI6Ii8yMTA5NzM0NzkvNDUzMDA4NjgzLWQxM2JiODEyLWY5ZWItNGIwYS1hYmFkLThhMDQzMDg5OTkzOC5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDYwOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA2MDlUMTMzNjEyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MTA4YmQ3ZDY3MzVhZTE3ZjQ5MDZkYjY0ZmQ5OWQ1YWM4MzRlNDE2ZjBiMzg3YWE2MmVhZjMwMDZlNTYxNjFjMSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.q5S4j83GeyqhWHgMmOZa1xduC_X9aWb-Mfvv0xU5hto",
     },
     {
-      name: "Robby Jhony",
+      name: "Muhammad Baliyun Taja",
       position: "Front End Developer",
-      imageUrl: "/people/images.jpeg",
+      imageUrl:
+        "https://private-user-images.githubusercontent.com/210973479/453028241-ed5ef8ba-c784-41ed-8fff-a232346d721b.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDk0Nzc1MjIsIm5iZiI6MTc0OTQ3NzIyMiwicGF0aCI6Ii8yMTA5NzM0NzkvNDUzMDI4MjQxLWVkNWVmOGJhLWM3ODQtNDFlZC04ZmZmLWEyMzIzNDZkNzIxYi5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI1MDYwOSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNTA2MDlUMTM1MzQyWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9M2JkY2IxYTg3ZmFlNTkyZjkwYmQ1MjNmMTRiM2Q4MzZkNjQ0MWFlYzM1NmZiZTFhMDU0OGIzMjNjYTNiYmFjMiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.dNgqcbqQeBDfebwQn12F5_frX7Zlum4KNLMrIgOaPoE",
     },
   ];
 
