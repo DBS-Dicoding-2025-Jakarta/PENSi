@@ -7,58 +7,68 @@ const blogPosts = [
   {
     id: "perencanaan",
     title:
-      "How to make a Game look more attractive with New VR & AI Technology",
+      "Cara Mempersiapkan Keuangan Pensiun dengan Teknologi AI dan Otomatisasi",
     date: "02 Juni 2025",
     author: "Indah Pertiwi",
     content: `
-      Digital technologies like VR and AI continue to evolve and push the boundaries of what is possible in game development. These tools offer developers the opportunity to create immersive and responsive gaming experiences that were unimaginable a decade ago. The integration of VR allows players to physically interact with the game world, while AI adds a layer of intelligence to both game mechanics and narrative design.
+      Di era digital, teknologi seperti AI dan otomatisasi keuangan memberikan kemudahan dalam merencanakan masa pensiun. Aplikasi berbasis AI mampu memantau pengeluaran, memberi saran investasi, hingga membuat proyeksi keuangan jangka panjang secara akurat.
+
+      Pengguna cukup memasukkan penghasilan dan pengeluaran bulanan, dan sistem akan secara otomatis menyarankan besaran dana pensiun yang perlu disiapkan. Ini sangat membantu bagi mereka yang tidak memiliki latar belakang keuangan.
+
+      Teknologi kini menjadi sahabat terbaik dalam membangun masa depan finansial yang aman dan nyaman.
     `,
-    quote:
-      "People worry their computers will get too smart and take over the world, but the real problem is they’re too stupid and they’ve already taken over the world.",
-    imageHeader: "/images/vr-1.jpg",
-    imageContent: "/images/vr-2.jpg",
+    quote: "Masa depan keuangan Anda dimulai hari ini, bukan besok.",
+    imageHeader: "/images/ai-pension-header.jpg",
+    imageContent: "/images/ai-pension-chart.jpg",
   },
   {
     id: "bestpractices",
-    title:
-      "How to make a Game look more attractive with New VR & AI Technology",
-    date: "02 Juni 2025",
-    author: "Indah Pertiwi",
+    title: "Investasi Cerdas untuk Masa Pensiun: Dari Emas hingga Reksa Dana",
+    date: "03 Juni 2025",
+    author: "Rudi Santosa",
     content: `
-      Digital technologies like VR and AI continue to evolve and push the boundaries of what is possible in game development. These tools offer developers the opportunity to create immersive and responsive gaming experiences that were unimaginable a decade ago. The integration of VR allows players to physically interact with the game world, while AI adds a layer of intelligence to both game mechanics and narrative design.
+      Investasi menjadi salah satu pilar penting dalam mempersiapkan masa pensiun. Instrumen seperti reksa dana, emas, deposito, hingga saham dividen dapat memberikan penghasilan pasif saat tidak lagi bekerja.
+
+      Diversifikasi portofolio menjadi kunci. Jangan hanya mengandalkan satu jenis investasi. Sebagai contoh, reksa dana memberikan imbal hasil jangka menengah, sedangkan emas menjaga nilai aset dari inflasi.
+
+      Yang paling penting: mulai lebih awal. Semakin dini Anda berinvestasi, semakin besar potensi hasilnya di masa depan.
     `,
     quote:
-      "People worry their computers will get too smart and take over the world, but the real problem is they’re too stupid and they’ve already taken over the world.",
-    imageHeader: "/images/vr-1.jpg",
-    imageContent: "/images/vr-2.jpg",
+      "Investasi terbaik adalah yang dimulai hari ini, bukan yang sempurna besok.",
+    imageHeader: "/images/investasi-pensiun.jpg",
+    imageContent: "/images/chart-diversifikasi.jpg",
   },
   {
     id: "fondasikeuangan",
-    title:
-      "How to make a Game look more attractive with New VR & AI Technology",
-    date: "02 Juni 2025",
-    author: "Indah Pertiwi",
+    title: "Menyiapkan Gaya Hidup Pensiun: Hemat, Sehat, dan Bahagia",
+    date: "04 Juni 2025",
+    author: "Dewi Aulia",
     content: `
-      Digital technologies like VR and AI continue to evolve and push the boundaries of what is possible in game development. These tools offer developers the opportunity to create immersive and responsive gaming experiences that were unimaginable a decade ago. The integration of VR allows players to physically interact with the game world, while AI adds a layer of intelligence to both game mechanics and narrative design.
+      Masa pensiun tidak harus identik dengan kesepian atau keterbatasan. Dengan perencanaan gaya hidup yang tepat, Anda bisa menjalani hari tua secara mandiri, sehat, dan tetap produktif.
+
+      Kunci utamanya adalah gaya hidup hemat yang tidak mengorbankan kualitas hidup. Misalnya, mengurangi konsumsi barang konsumtif dan fokus pada kebutuhan esensial, seperti kesehatan dan nutrisi.
+
+      Selain itu, aktif secara sosial dan tetap belajar hal baru akan menjaga kualitas hidup dan kebahagiaan di masa pensiun.
     `,
-    quote:
-      "People worry their computers will get too smart and take over the world, but the real problem is they’re too stupid and they’ve already taken over the world.",
-    imageHeader: "/images/vr-1.jpg",
-    imageContent: "/images/vr-2.jpg",
+    quote: "Hidup hemat bukan berarti kekurangan, tapi memilih untuk cukup.",
+    imageHeader: "/images/gaya-hidup-pensiun.jpg",
+    imageContent: "/images/aktivitas-senior.jpg",
   },
   {
     id: "gayahiduppensiun",
-    title:
-      "How to make a Game look more attractive with New VR & AI Technology",
-    date: "02 Juni 2025",
-    author: "Indah Pertiwi",
+    title: "Pentingnya Dana Darurat Sebagai Fondasi Keuangan Pensiun",
+    date: "05 Juni 2025",
+    author: "Andi Prasetya",
     content: `
-      Digital technologies like VR and AI continue to evolve and push the boundaries of what is possible in game development. These tools offer developers the opportunity to create immersive and responsive gaming experiences that were unimaginable a decade ago. The integration of VR allows players to physically interact with the game world, while AI adds a layer of intelligence to both game mechanics and narrative design.
+      Dana darurat adalah komponen penting yang sering diabaikan dalam perencanaan pensiun. Fungsinya untuk mengantisipasi kebutuhan tak terduga seperti biaya medis, perbaikan rumah, atau kebutuhan keluarga.
+
+      Idealnya, dana darurat sebesar 6–12 bulan pengeluaran disiapkan dan disimpan dalam instrumen yang likuid, seperti tabungan atau deposito.
+
+      Dengan adanya dana darurat, investasi pensiun Anda tidak akan terganggu jika terjadi krisis kecil dalam hidup.
     `,
-    quote:
-      "People worry their computers will get too smart and take over the world, but the real problem is they’re too stupid and they’ve already taken over the world.",
-    imageHeader: "/images/vr-1.jpg",
-    imageContent: "/images/vr-2.jpg",
+    quote: "Dana darurat adalah pelampung dalam badai keuangan tak terduga.",
+    imageHeader: "/images/dana-darurat.jpg",
+    imageContent: "/images/emergency-fund-chart.jpg",
   },
 ];
 
@@ -96,27 +106,14 @@ export default function BlogDetail({ params }: { params: { id: string } }) {
           “{post.quote}”
         </blockquote>
 
-        <p className="mb-6 text-lg leading-relaxed">
-          AI is also helpful in personalizing player experiences – adjusting
-          difficulty, adapting narratives, and responding intelligently to
-          player choices. Combined with VR, this creates truly personalized and
-          engaging gameplay loops that make players feel central to the story.
-        </p>
-
         <div className="relative w-full aspect-video mb-8 rounded-xl overflow-hidden">
           <Image
             src={post.imageContent}
-            alt="Game AI"
+            alt={post.id}
             fill
             className="object-cover"
           />
         </div>
-
-        <p className="text-lg leading-relaxed">
-          In conclusion, both VR and AI offer incredible potential for the
-          future of gaming. Developers who embrace these tools will be better
-          equipped to craft unforgettable interactive experiences.
-        </p>
       </main>
 
       <Subscription />
