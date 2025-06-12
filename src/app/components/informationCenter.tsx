@@ -17,7 +17,7 @@ const InformationCenter: React.FC = () => {
 
         <main className="flex flex-col gap-8">
           {/* Featured Card */}
-          <Link href="/blog/PERENCANAAN">
+          <Link href="/informationBlog/PERENCANAAN">
             <div className="flex flex-col lg:flex-row bg-primary/10 rounded-lg overflow-hidden cursor-pointer">
               <div className="p-8 lg:w-1/2">
                 <p className="text-primary uppercase font-medium text-sm mb-3">
@@ -53,7 +53,7 @@ const InformationCenter: React.FC = () => {
           {/* Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Card 1 */}
-            <Link href="/blog/BESTPRACTICES">
+            <Link href="/informationBlog/BESTPRACTICES">
               <div className="bg-primary/10 rounded-lg overflow-hidden flex flex-col h-full cursor-pointer">
                 <div className="p-6 flex-grow">
                   <p className="text-primary uppercase font-medium text-sm mb-3">
@@ -76,7 +76,7 @@ const InformationCenter: React.FC = () => {
             </Link>
 
             {/* Card 2 */}
-            <Link href="/blog/FONDASIKEUANGAN">
+            <Link href="/informationBlog/FONDASIKEUANGAN">
               <div className="bg-primary/10 rounded-lg overflow-hidden flex flex-col h-full cursor-pointer">
                 <div className="p-6 flex-grow">
                   <p className="text-primary uppercase font-medium text-sm mb-3">
@@ -99,7 +99,7 @@ const InformationCenter: React.FC = () => {
             </Link>
 
             {/* Card 3 */}
-            <Link href="/blog/GAYAHIDUPPENSIUN">
+            <Link href="/informationBlog/GAYAHIDUPPENSIUN">
               <div className="bg-primary/10 rounded-lg overflow-hidden flex flex-col h-full cursor-pointer">
                 <div className="p-6 flex-grow">
                   <p className="text-primary uppercase font-medium text-sm mb-3">
