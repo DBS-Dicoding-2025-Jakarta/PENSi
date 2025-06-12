@@ -10,42 +10,42 @@ const Testimoni: React.FC = () => {
       quote:
         "Saya baru sadar pentingnya dana pensiun setelah mencoba PENSi. Platform ini benar-benar mudah digunakan dan hasil estimasinya bikin saya lebih tenang menghadapi masa depan.",
       author: "Rini Wulandari",
-      image: "/people/download(2).jpeg",
+      image: "/people/baliyun.jpeg",
     },
     {
       id: 2,
       quote:
         "Sebagai pelaku UMKM, saya nggak pernah mikirin pensiun sebelumnya. Tapi PENSi bantu saya ngitung kebutuhan dana secara realistis. Gak ribet, gak pusing.",
       author: "Ahmad Setiawan",
-      image: "/people/download(2).jpeg",
+      image: "/people/fahmi.jpeg",
     },
     {
       id: 3,
       quote:
         "Literasi keuangan saya masih rendah, tapi PENSi menjelaskan semuanya dengan bahasa yang simpel. Sekarang saya bisa punya rencana pensiun sejak muda.",
       author: "Dinda Lestari",
-      image: "/people/download(2).jpeg",
+      image: "/people/qaila.jpeg",
     },
     {
       id: 4,
       quote:
         "Platform ini mengubah cara saya merencanakan keuangan. Sangat informatif dan membantu!",
       author: "Budi Hartono",
-      image: "/people/download(2).jpeg",
+      image: "/people/baliyun.jpeg",
     },
     {
       id: 5,
       quote:
         "Sekarang saya bisa lebih tenang menghadapi masa pensiun karena punya gambaran yang jelas.",
       author: "Sari Dewi",
-      image: "/people/download(2).jpeg",
+      image: "/people/nico.jpeg",
     },
     {
       id: 6,
       quote:
         "Sekarang saya bisa lebih tenang menghadapi masa pensiun karena punya gambaran yang jelas.",
       author: "Sari Dewi",
-      image: "/people/download(2).jpeg",
+      image: "/people/rinaldi.jpeg",
     },
   ];
 
