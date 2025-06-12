@@ -40,7 +40,7 @@ const InformationCenter: React.FC = () => {
               </div>
               <div className="lg:w-1/2 overflow-hidden">
                 <Image
-                  src="/people/download(2).jpeg"
+                  src="/people/blog1 (1).png"
                   alt="Profesional bisnis"
                   width={700}
                   height={400}
@@ -65,7 +65,7 @@ const InformationCenter: React.FC = () => {
                 </div>
                 <div className="mt-auto">
                   <Image
-                    src="/people/download(2).jpeg"
+                    src="/people/blog1 (2).png"
                     alt="Konsultasi keuangan"
                     width={400}
                     height={250}
@@ -88,7 +88,7 @@ const InformationCenter: React.FC = () => {
                 </div>
                 <div className="mt-auto">
                   <Image
-                    src="/people/download(2).jpeg"
+                    src="/people/blog1 (3).png"
                     alt="Gedung investasi"
                     width={400}
                     height={250}
@@ -112,7 +112,7 @@ const InformationCenter: React.FC = () => {
                 </div>
                 <div className="mt-auto">
                   <Image
-                    src="/people/download(2).jpeg"
+                    src="/people/blog1 (4).png"
                     alt="Analisis keuangan"
                     width={400}
                     height={250}

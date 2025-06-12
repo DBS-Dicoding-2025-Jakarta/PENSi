@@ -8,7 +8,7 @@ const blogPosts = [
     title: "Start Your Journey: Pensiun sejak Dini",
     summary: "Mengenal pentingnya mulai merencanakan pensiun dari usia muda.",
     category: "Perencanaan",
-    imageUrl: "/images/pensiun-dini.jpg",
+    imageUrl: "/people/blogw.png",
   },
   {
     id: "bestpractices",
@@ -16,21 +16,21 @@ const blogPosts = [
     summary:
       "Langkah-langkah strategis dalam menyusun dana pensiun yang realistis.",
     category: "Strategi",
-    imageUrl: "/images/best-practices.jpg",
+    imageUrl: "/people/blogw1.jpg",
   },
   {
     id: "fondasikeuangan",
     title: "Investasi vs Tabungan",
     summary: "Perbedaan utama dan kapan harus memilih investasi atau tabungan.",
     category: "Fondasi Keuangan",
-    imageUrl: "/images/investasi-vs-tabungan.jpg",
+    imageUrl: "/people/blogw2.jpg",
   },
   {
     id: "gayahiduppensiun",
     title: "Pensiun Bahagia dan Produktif",
     summary: "Mengisi masa pensiun dengan gaya hidup yang bermakna dan aktif.",
     category: "Gaya Hidup",
-    imageUrl: "/images/gaya-hidup.jpg",
+    imageUrl: "/people/blogw3.jpg",
   },
 ];
 

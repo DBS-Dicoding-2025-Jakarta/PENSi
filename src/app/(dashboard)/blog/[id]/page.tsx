@@ -18,8 +18,8 @@ const blogPosts = [
       Teknologi kini menjadi sahabat terbaik dalam membangun masa depan finansial yang aman dan nyaman.
     `,
     quote: "Masa depan keuangan Anda dimulai hari ini, bukan besok.",
-    imageHeader: "/images/ai-pension-header.jpg",
-    imageContent: "/images/ai-pension-chart.jpg",
+    imageHeader: "/people/blogw4.png",
+    imageContent: "/people/blogw5.jpg",
   },
   {
     id: "bestpractices",
@@ -35,8 +35,8 @@ const blogPosts = [
     `,
     quote:
       "Investasi terbaik adalah yang dimulai hari ini, bukan yang sempurna besok.",
-    imageHeader: "/images/investasi-pensiun.jpg",
-    imageContent: "/images/chart-diversifikasi.jpg",
+    imageHeader: "/people/blogw6.jpg",
+    imageContent: "/people/blogw7.jpg",
   },
   {
     id: "fondasikeuangan",
@@ -51,8 +51,8 @@ const blogPosts = [
       Selain itu, aktif secara sosial dan tetap belajar hal baru akan menjaga kualitas hidup dan kebahagiaan di masa pensiun.
     `,
     quote: "Hidup hemat bukan berarti kekurangan, tapi memilih untuk cukup.",
-    imageHeader: "/images/gaya-hidup-pensiun.jpg",
-    imageContent: "/images/aktivitas-senior.jpg",
+    imageHeader: "/people/blogw8.jpeg",
+    imageContent: "/people/blogw9.png",
   },
   {
     id: "gayahiduppensiun",
@@ -67,8 +67,8 @@ const blogPosts = [
       Dengan adanya dana darurat, investasi pensiun Anda tidak akan terganggu jika terjadi krisis kecil dalam hidup.
     `,
     quote: "Dana darurat adalah pelampung dalam badai keuangan tak terduga.",
-    imageHeader: "/images/dana-darurat.jpg",
-    imageContent: "/images/emergency-fund-chart.jpg",
+    imageHeader: "/people/blogw11.png",
+    imageContent: "/people/blogw10.jpg",
   },
 ];
 
