@@ -120,7 +120,3 @@ export default function BlogDetail({ params }: { params: { id: string } }) {
     </>
   );
 }
-
-export async function generateStaticParams() {
-  return blogPosts.map((post) => ({ id: post.id }));
-}
