@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Subscription from "@/app/components/Subscription";
-import { any } from "@tensorflow/tfjs";
 
 // Simulasi data detail blog
 const InformationCenter = [

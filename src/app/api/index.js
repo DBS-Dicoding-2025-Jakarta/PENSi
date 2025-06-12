@@ -1,7 +1,6 @@
-const express = require("express");
-const cors = require("cors");
-const path = require("path");
-const { loadModel, predict } = require("../utils/modelService");
+import express from "express";
+import cors from "cors";
+import { loadModel, predict } from "../utils/modelService";
 
 const app = express();
 const PORT = process.env.PORT || 9000;
@@ -171,7 +170,7 @@ app.post("/predict", async (req, res) => {
 // });
 
 // Error handling middleware
-app.use((err, req, res, next) => {
+app.use((err, req, res) => {
   console.error(err.stack);
   res.status(500).json({
     error: "Internal server error",

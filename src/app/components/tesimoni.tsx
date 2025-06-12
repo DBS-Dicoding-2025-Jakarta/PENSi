@@ -81,7 +81,7 @@ const Testimoni: React.FC = () => {
                   &rdquo;
                 </div>
                 <p className="text-base leading-relaxed">
-                  "{testimonial.quote}"
+                  &quot;{testimonial.quote}&quot;
                 </p>
               </blockquote>
               <footer className="flex flex-col items-center mt-auto">
