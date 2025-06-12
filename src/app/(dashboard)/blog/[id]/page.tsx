@@ -72,7 +72,8 @@ const blogPosts = [
   },
 ];
 
-export default function BlogDetail({ params }: { params: { id: string } }) {
+export default async function BlogDetail(props: { params: Promise<{ id: string }> }) {
+  const params = await props.params;
   const post = blogPosts.find((item) => item.id === params.id);
 
   if (!post) {
