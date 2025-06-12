@@ -206,18 +206,92 @@ const LayananPage: React.FC = () => {
         </form>
 
         {hasilPrediksi !== null && (
-          <div className="mt-8 p-6 bg-primary border border-primary text-white rounded-lg">
-            <h3 className="text-lg font-semibold mb-2">Hasil Prediksi:</h3>
-            <div className="text-2xl font-bold">
-              Estimasi dana pensiun yang dibutuhkan:
+          <>
+            <div className="mt-8 p-6 bg-primary border border-primary text-white rounded-lg">
+              <h3 className="text-lg font-semibold mb-2">Hasil Prediksi:</h3>
+              <div className="text-2xl font-bold">
+                Estimasi dana pensiun yang dibutuhkan:
+              </div>
+              <div className="text-3xl font-bold mt-2">
+                Rp {Math.round(hasilPrediksi).toLocaleString("id-ID")}
+              </div>
+              <p className="text-sm mt-2">
+                *Hasil ini adalah estimasi berdasarkan model
+              </p>
             </div>
-            <div className="text-3xl font-bold mt-2">
-              Rp {Math.round(hasilPrediksi).toLocaleString("id-ID")}
+
+            <div className="mt-8 bg-white border border-gray-300 rounded-lg p-6 shadow-md">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4">
+                Rekomendasi Investasi
+              </h3>
+              <p className="text-gray-700 mb-2">
+                Berikut adalah beberapa pilihan investasi yang bisa kamu
+                pertimbangkan untuk mempersiapkan dana pensiunmu:
+              </p>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-gray-800">📌 Reksa Dana</h4>
+                  <p className="text-gray-700">
+                    Cocok untuk pemula. Dikelola oleh manajer investasi dengan
+                    portofolio terdiversifikasi.
+                  </p>
+                  <ul className="text-sm text-gray-600 list-disc list-inside mt-1">
+                    <li>Return tahunan: ±5% - 10%</li>
+                    <li>Risiko: Rendah hingga Sedang</li>
+                    <li>Jangka waktu: Menengah - Panjang (3-10 tahun)</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-gray-800">
+                    📌 Obligasi Pemerintah (SBN)
+                  </h4>
+                  <p className="text-gray-700">
+                    Cocok untuk investor konservatif. Memberikan bunga tetap dan
+                    dijamin negara.
+                  </p>
+                  <ul className="text-sm text-gray-600 list-disc list-inside mt-1">
+                    <li>Return tahunan: ±5% - 7%</li>
+                    <li>Risiko: Rendah</li>
+                    <li>Jangka waktu: Menengah (2-5 tahun)</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-gray-800">📌 Saham</h4>
+                  <p className="text-gray-700">
+                    Potensi imbal hasil tinggi, tetapi berfluktuasi. Cocok untuk
+                    investor agresif.
+                  </p>
+                  <ul className="text-sm text-gray-600 list-disc list-inside mt-1">
+                    <li>Return tahunan: ±10% - 20%</li>
+                    <li>Risiko: Tinggi</li>
+                    <li>Jangka waktu: Panjang (5+ tahun)</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-gray-800">
+                    📌 Deposito Berjangka
+                  </h4>
+                  <p className="text-gray-700">
+                    Instrumen simpanan dengan bunga tetap. Aman tapi return
+                    rendah.
+                  </p>
+                  <ul className="text-sm text-gray-600 list-disc list-inside mt-1">
+                    <li>Return tahunan: ±3% - 4%</li>
+                    <li>Risiko: Sangat Rendah</li>
+                    <li>Jangka waktu: Pendek - Menengah (1-3 tahun)</li>
+                  </ul>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm mt-6">
+                *Estimasi return bisa berubah tergantung kondisi pasar dan
+                ekonomi. Konsultasikan dengan perencana keuangan sebelum
+                berinvestasi.
+              </p>
             </div>
-            <p className="text-sm mt-2">
-              *Hasil ini adalah estimasi berdasarkan model
-            </p>
-          </div>
+          </>
         )}
       </div>
       <Subscription />
